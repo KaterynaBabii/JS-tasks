@@ -4,8 +4,8 @@
 var str = "1,2,7, ,863,-3,4,0,-123,9,5";
 var num = str.split(",").map(Number);
 
-var max = min = num[0];
-
+var max = min = num[0]; // where you creating var min?
+// please create func
 for(var i = 0; i <= num.length; i++){
   if (num[i] > max) {
     max = num[i];   
