@@ -5,9 +5,10 @@ var n, x = 15.20;
 var coins = x * 100;
 console.log(coins);
 
+// please create func;
 console.log("coins 50: " +Math.floor(coins / 50));
-console.log("Zalyshok: " +Math.floor(coins % 50));
-console.log("coins 25: " +Math.floor(Math.floor(coins % 50) / 25));
+console.log("Zalyshok: " +Math.floor(coins % 50)); // please don't use translit only english lang;
+console.log("coins 25: " +Math.floor(Math.floor(coins % 50) / 25)); // you repeat previous line, why dont create helper func for it
 n = Math.floor(Math.floor(Math.floor(coins % 50) % 25));
 console.log("Zalyshok: " +n);
 console.log("coins 10: " +Math.floor(n / 10));
@@ -25,9 +26,9 @@ function coin ( value ){
   if(x <= 0) {
     return 0;
   }
-  var sum50 = 0, sum25 = 0, sum10 = 0, sum5 = 0, sum2 = 0 ; 
+  var sum50 = 0, sum25 = 0, sum10 = 0, sum5 = 0, sum2 = 0 ; // all vars should be on the top level of func;
   
-  while(x >= 50){ 
+  while(x >= 50){ // to many same loops try to use helper func 
     x = x - 50;
     sum50++; 
   }
